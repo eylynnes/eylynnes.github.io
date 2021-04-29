@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "김예린"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/아바타.png"
   bio              : "행복한 컴퓨터교육 설계자"
   location         : "대한민국, 서울"
   email            : "yesicha62@gmail.com"
