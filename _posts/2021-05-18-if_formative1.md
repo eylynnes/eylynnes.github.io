@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "조건문"
+title: "C언어 수행평가 정리"
 
 toc: true
 toc_sticky: true
@@ -72,5 +72,100 @@ int main(void)
  } 
  printf("입니다.\n"); 
  return 0; 
-}~~~ 
+}
+~~~ 
+
+### 04. 과목별 점수 계산
+~~~c
+#include <stdio.h>
+ 
+int main(void) {
+float a, b, c;
+int d, e, f;
+float score;
+printf("***과목별 점수 계산 프로그램***\n");
+printf("중간고사 반영비율/받은 점수를 입력하세요 : ");
+scanf("%f%d", &a, &d);
+printf("기말고사 반영비율/받은 점수를 입력하세요 : ");
+scanf("%f%d", &b, &e);
+printf("중간고사 반영비율/받은 점수를 입력하세요 : ");
+scanf("%f%d", &c, &f);
+score = a*d+b*e+c*f;
+printf("점수는 %.1f입니다.\n", score);
+ 
+return 0;
+}
+~~~
+
+### 05. 30분 전
+~~~c
+#include <stdio.h>
+int main(void) {
+int hour, min;
+printf("시간과 분을 입력하세요 : ");
+scanf("%d, %d", &hour, &min);
+printf("입력한 시간의 30분 전 시간은 : ");
+if(min>=30)
+printf("%d시 %d분\n", hour, min-30);
+else{
+ if(hour==0)
+ printf("%d시 %d분\n", 23, min+30);
+ else
+ printf("%d시 %d분\n", hour-1, min+30);
+}
+ return 0;
+}
+~~~
+
+### 06. 도어락
+~~~c
+#include <stdio.h> 
+int main(void) {
+int select;
+char dic='c', ic;
+int dpw=24680, pw;
+double dfig=1.22345678, fig;
+ 
+printf("장치 선택 : ");
+scanf("%d", &select);
+ 
+if(select==1){
+ printf("IC카드: ");
+ scanf(" %char", &ic);}
+else if(select==2){
+  printf("비밀번호 : ");
+  scanf("%d", &pw);}
+else{
+  printf("지문 : ");
+  scanf("%lf", &fig);
+}
+if(dic==ic || dpw==pw || dfig==fig)
+ printf("문 열림~");
+else
+printf("디리릭!디리릭!");}
+ return 0; 
+}
+~~~ 
+
+
+### 07. 가위바위보
+~~~c
+#include <stdio.h> 
+int main(){
+ 
+char com, user;
+com='s';
+ 
+printf("r/s/p : ");
+scanf("%c", &user);
+ 
+if(com==user)
+printf("비겼다.");
+else if(com=='r' && user=='s')||(com=='s' && user=='p')||(com=='p' && user=='r')
+printf("졌다.")
+else
+printf("이겼다.")}
+ return 0; 
+}
+~~~ 
 
