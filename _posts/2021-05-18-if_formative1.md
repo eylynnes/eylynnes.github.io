@@ -75,7 +75,8 @@ int main(void)
 }
 ~~~ 
 
-### 04. 과목별 점수 계산
+### 04. 성적 계산
+![grade](/assets/images/grade.PNG) 
 ~~~c
 #include <stdio.h>
  
@@ -98,6 +99,7 @@ return 0;
 ~~~
 
 ### 05. 30분 전
+![before](/assets/images/clock.PNG) 
 ~~~c
 #include <stdio.h>
 int main(void) {
@@ -118,6 +120,7 @@ else{
 ~~~
 
 ### 06. 도어락
+![doorlock](/assets/images/door.PNG) 
 ~~~c
 #include <stdio.h> 
 int main(void) {
@@ -149,6 +152,7 @@ printf("디리릭!디리릭!");}
 
 
 ### 07. 가위바위보
+![scissorpaper](/assets/images/rock.PNG) 
 ~~~c
 #include <stdio.h> 
 int main(){
