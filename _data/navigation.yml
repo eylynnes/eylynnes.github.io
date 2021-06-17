@@ -1,8 +1,9 @@
 # main links
 main:
-- title: "개념"
+    -title: "개념"
     url: /categories/
-- title: "연도"
-     url: /posts/
-- title: "소개"
-     url: /about/
+    -title: "연도"
+    url: /posts/
+    -title: "소개"
+    url: /about/
+  
